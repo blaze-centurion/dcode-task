@@ -8,13 +8,15 @@ const NavBar = () => {
   return (
     <>
       <div className="flex justify-between px-10 pt-4">
-        <Image
-          src="/assets/logo.png"
-          width={300}
-          height={300}
-          alt="Logo"
-          className="invert"
-        />
+        <Link href="/">
+          <Image
+            src="/assets/logo.png"
+            width={300}
+            height={300}
+            alt="Logo"
+            className="invert"
+          />
+        </Link>
 
         <ul className="flex items-center gap-5  text-[17px] font-[500]">
           <NavbarItem name="Featured" link="/" />
