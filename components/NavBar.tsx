@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import NavbarItem from "./NavbarItem";
 
 const NavBar = () => {
   return (
@@ -16,18 +17,14 @@ const NavBar = () => {
         />
 
         <ul className="flex items-center gap-5  text-[17px] font-[500]">
-          <li>
-            <Link href="/">Featured</Link>
-          </li>
-          <li>
-            <Link href="/">New</Link>
-          </li>
-          <li>
-            <Link href="/">Popular</Link>
-          </li>
-          <li>
+          <NavbarItem name="Featured" link="/" />
+          <NavbarItem name="Announcements" link="/" />
+          <NavbarItem name="Upcoming Events" link="/" />
+          <NavbarItem name="Login" link="/" />
+
+          <li className="hover:underline">
             <Button className="bg-purple-400  px-5 py-[6px] h-auto text-[16px] font-semibold">
-              <Link href="/">Login</Link>
+              <Link href="/">Sign Up</Link>
             </Button>
           </li>
         </ul>

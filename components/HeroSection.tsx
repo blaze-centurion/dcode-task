@@ -49,11 +49,11 @@ const HeroSection = () => {
         </div>
         <div className="new lg:w-[25%] md:w-[30%] bg-white min-w-[150px] max-h-[70vh] overflow-auto card-box-shadow p-3 py-5 ">
           <div className="w-full border-b border-slate-300 pb-2 mb-5">
-            <h1 className="text-lg font-[500]">Most Trending</h1>
+            <h1 className="text-lg font-[500]">Recent Announcements</h1>
           </div>
           {BlogsData.map((item) => {
             return (
-              item.categories.includes("Trending") && (
+              item.categories.includes("Announcements") && (
                 <SmallHorCard key={item.id} {...item} />
               )
             );
